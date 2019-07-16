@@ -7,7 +7,7 @@ Swift handover for remote mobs using git.
 It keeps your master branch clean and creates WIP commits on `mob-session` branch.
 
 ## How to use it?
-
+Copy `MobProgramming.*` scripts into your git repo as `mob.*` for simplicity.
 ```bash
 # quinn begins the mob session as typist
 quinn$ mob start
@@ -29,7 +29,7 @@ laura$ git commit --message "describe what the mob session was all about"
 ## How does it work?
 
 - `mob start` creates branch `mob-session` and pulls from `origin/mob-session`
-- `mob next` pushes all changes to `origin/mob-session`in a `WIP [ci-skip]` commit
+- `mob next` pushes all changes to `origin/mob-session`in a `WIP in Mob Sessions` commit
 - `mob done` squashes all changes in `mob-session` into staging of `master` and removes `mob-session` and `origin/mob-session` 
 - `mob status` display the mob session status and all the created WIP commits
 - `mob reset` deletes `mob-session` and `origin/mob-session`
